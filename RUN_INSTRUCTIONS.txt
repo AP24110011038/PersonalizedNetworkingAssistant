@@ -1,0 +1,37 @@
+PERSONALIZED NETWORKING ASSISTANT - HOW TO RUN
+
+1. Extract the ZIP file.
+
+2. Open the extracted project folder.
+   It must contain these files/folders:
+   - app
+   - frontend
+   - tests
+   - requirements.txt
+   - START_BACKEND.bat
+   - START_FRONTEND.bat
+
+3. Double-click START_BACKEND.bat.
+   Keep that window open.
+
+4. Double-click START_FRONTEND.bat.
+   Keep that window open.
+
+5. Open this in your browser:
+   http://localhost:8501
+
+Do not use http://127.0.0.1:8000 for the main app.
+That address is only for the backend API.
+
+Backend docs:
+http://127.0.0.1:8000/docs
+
+If you want to run manually in PowerShell:
+
+cd "PROJECT_FOLDER_PATH"
+C:\Users\91939\AppData\Local\Python\pythoncore-3.14-64\python.exe -m uvicorn app.main:app --reload
+
+Then open a second PowerShell:
+
+cd "PROJECT_FOLDER_PATH"
+C:\Users\91939\AppData\Local\Python\pythoncore-3.14-64\python.exe -m streamlit run frontend\streamlit_app.py

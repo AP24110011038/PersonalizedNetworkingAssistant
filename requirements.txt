@@ -1,0 +1,11 @@
+fastapi>=0.115.6
+uvicorn[standard]>=0.34.0
+streamlit>=1.41.1
+requests>=2.32.3
+pytest>=8.3.4
+httpx>=0.28.1
+
+# Optional AI model dependencies.
+# Install these when you want local DistilBERT/GPT-2 inference:
+# transformers==4.47.1
+# torch==2.5.1
