@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+streamlit
+transformers
+torch
+requests
+pydantic
+pytest
+httpx
